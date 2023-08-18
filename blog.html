@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/blog.css" />
+    <script
+      src="https://kit.fontawesome.com/2d2e41954d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li>
+              <img
+                src="https://dumbways.id/assets/images/brandred.png"
+                alt=""
+              />
+            </li>
+            <li class="item-collapse"><a href="./index.html">Home</a></li>
+            <li class="item-collapse"><a href="./blog.html" class="active">Project</a></li>
+            <li class="item-collapse"><a href="./testimonial.html" class="active">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="nav-right item-collapse">
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-right" id="barsmenu">
+          <button
+            style="background-color: transparent; border: none; cursor: pointer"
+            onclick="openHamburger();"
+          >
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html">Home</a>
+        <a href="blog.html" class="hamburger-active">Blog</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="form-project">
+        <form onsubmit="handleAddProject(event)">
+          <h1 align="center">ADD MY PROJECT</h1>
+          <div class="name">
+            <label for="input-name">Project Name</label>
+            <input
+              type="text"
+              id="input-name"
+              placeholder="Masukan Nama"
+              required
+            />
+          </div>
+
+          <div class="date">
+            <div class="date-start">
+              <label for="date-start">Start Date</label>
+              <input id="date-start" type="date" required />
+            </div>
+
+            <div class="date-end">
+              <label for="date-end">End Date</label>
+              <input id="date-end" type="date" required />
+            </div>
+          </div>
+
+          <label for="input-description">Description</label>
+          <textarea
+            name=""
+            cols="4"
+            rows="5"
+            id="input-description"
+            placeholder="Masukan Deskripsi"
+          ></textarea>
+
+          <label for="">Technologies</label>
+          <table>
+            <tr>
+              <td class="input"><input class="checkbox" type="checkbox" value="Node Js" id="node" /></td>
+              <td><label for="node">Node Js</label></td>
+              <td class="input"><input class="checkbox" type="checkbox" value="Next Js" id="next" /></td>
+              <td><label for="next">Next Js</label></td>
+            </tr>
+            <tr>
+              <td class="input"><input class="checkbox" type="checkbox" value="React Js" id="react" /></td>
+              <td><label for="react">React Js</label></td>
+              <td class="input"><input class="checkbox" type="checkbox" value="TypeScript" id="typescript" /></td>
+              <td><label for="typescript">TypeScript</label></td>
+              <td></td>
+            </tr>
+          </table>
+
+          <div class="input-file">
+            <label for="input-file">Upload Image</label>
+            <input type="file" name="" id="input-file" />
+          </div>
+
+          <div class="button-group">
+            <button type="submit">Sumbit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="my-project">
+        <h1 align="center">MY PROJECT</h1>
+        <div id="card-project" class="card-project">
+          
+      </div>
+    </main>
+
+    <script src="js/blog.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

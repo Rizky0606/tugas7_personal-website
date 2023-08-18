@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(201, 201, 201);
+}
+nav {
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+}
+nav .nav-left ul {
+  display: flex;
+  align-items: center;
+}
+nav .nav-left ul li {
+  list-style-type: none;
+  margin-left: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-left {
+  flex: 50%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.nav-right a {
+  background-color: orangered;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+nav > .nav-left > ul > li > img {
+  height: 35px;
+  width: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li .active {
+  color: tomato !important;
+}
+#barsmenu {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger a {
+  color: #000;
+}
+
+.hamburger-nav-container {
+  font-size: 23px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9a9a9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.hamburger-nav-container .hamburger-active {
+  text-decoration: none;
+  color: #fff;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.header {
+  margin: 90px 20px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 13px 21px 5px rgba(135, 130, 130, 0.75);
+  -webkit-box-shadow: 2px 13px 21px 5px rgba(135, 130, 130, 0.75);
+  -moz-box-shadow: 2px 13px 21px 5px rgba(135, 130, 130, 0.75);
+}
+
+.header .left {
+  flex: 65%;
+  padding: 20px;
+}
+.header .left h2 {
+  font-size: 40px;
+  padding: 10px;
+}
+.header .left p {
+  font-size: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+.header .right {
+  flex: 30%;
+  padding: 20px;
+}
+.header .left .contact {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.header .left .contact button {
+  background-color: black;
+  color: white;
+}
+.header .left .contact p {
+  margin-left: 20px;
+}
+.header .left .contact button {
+  border-radius: 20px;
+  background-color: black;
+  width: 100px;
+  margin: 10px 0;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header .left .contact button:hover {
+  color: black;
+  background-color: white;
+}
+.header .left .card-item .sosmed {
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.header .left .card-item .sosmed a {
+  margin-right: 20px;
+}
+.header .right .card {
+  border: 1px solid black;
+  margin: auto;
+  border-radius: 10px;
+  display: grid;
+  justify-content: center;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 10px #757474;
+}
+.header .right .card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header .left p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header .left h2 {
+    font-size: 30px;
+  }
+  .header .left p {
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header .left h2 {
+    font-size: 25px;
+  }
+  .header .left p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .header {
+    flex-direction: column;
+    margin: 50px 20px;
+  }
+  .header .left h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .header .left p {
+    font-size: 18px;
+  }
+  .header .left .card-item {
+    display: flex;
+  }
+  .header .left .card-item .sosmed {
+    font-size: 30px;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: center;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header .left p {
+    font-size: 16px;
+  }
+  .header .left .card-item {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav-left .item-collapse {
+    display: none;
+  }
+
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header .left h2 {
+    font-size: 25px;
+  }
+  .header .right {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .header .right .card {
+    width: 260px;
+  }
+}

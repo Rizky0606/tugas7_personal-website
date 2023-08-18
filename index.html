@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-left">
+          <ul>
+            <li>
+              <img
+                src="https://dumbways.id/assets/images/brandred.png"
+                alt=""
+              />
+            </li>
+            <li class="item-collapse">
+              <a href="./index.html" class="active">Home</a>
+            </li>
+            <li class="item-collapse"><a href="./blog.html">Project</a></li>
+            <li class="item-collapse">
+              <a href="./testimonial.html">Testimonials</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-right item-collapse">
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-right" id="barsmenu">
+          <button
+            style="background-color: transparent; border: none; cursor: pointer"
+            onclick="openHamburger();"
+          >
+            <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+      <div class="hamburger-nav-container" id="hamburger-nav-container">
+        <a href="index.html" class="hamburger-active">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonial.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+    <div class="header">
+      <!-- header -->
+      <div class="left">
+        <h2>Hi Welcome to my hut</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
+          accusantium nemo autem.
+        </p>
+        <div class="card-item">
+          <div class="contact">
+            <a href="./contact.html">
+              <button>Contact</button>
+            </a>
+            <p>
+              download CV
+              <i class="fa-solid fa-download" style="color: #000000"></i>
+            </p>
+          </div>
+
+          <!-- sosmed -->
+          <div class="sosmed">
+            <a
+              href="https://www.linkedin.com/in/rizky-fauzi-847828220/"
+              target="_blank"
+              ><i
+                class="fa-brands fa-linkedin"
+                style="margin-left: 15px; color: #000000"
+              ></i
+            ></a>
+            <a href="https://www.instagram.com/rizkyf06/" target="_blank"
+              ><i
+                class="fa-brands fa-instagram"
+                style="margin-left: 15px; color: #000000"
+              ></i
+            ></a>
+            <a href="https://www.facebook.com/rizky.fauzi.908/" target="_blank"
+              ><i
+                class="fa-brands fa-facebook"
+                style="margin-left: 15px; color: #000000"
+              ></i
+            ></a>
+            <a href="https://github.com/Rizky0606" target="_blank"
+              ><i
+                class="fa-brands fa-github"
+                style="margin-left: 15px; color: #000000"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- card -->
+      <div class="right">
+        <div class="card">
+          <img src="./image/image.jpg" alt="Foto Saya" />
+          <h3>Rizky Fauzi Ardiansyah</h3>
+          <p>Fullstack Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/2d2e41954d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

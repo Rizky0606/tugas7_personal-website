@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+}
+nav .nav-left ul {
+  display: flex;
+  align-items: center;
+}
+nav .nav-left ul li {
+  list-style-type: none;
+  margin-left: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-left {
+  flex: 50%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.nav-right a {
+  background-color: orangered;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+nav > .nav-left > ul > li > img {
+  height: 35px;
+  width: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li .active {
+  color: tomato !important;
+}
+
+#barsmenu {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger a {
+  color: #000;
+}
+
+.hamburger-nav-container {
+  font-size: 23px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9a9a9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.hamburger-nav-container .hamburger-active {
+  text-decoration: none;
+  color: #fff;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.form-project {
+  background-color: rgb(201, 201, 201);
+  width: 100%;
+  height: 100vh;
+}
+.form-project form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 600px;
+  margin: auto;
+}
+.form-project form label {
+  margin-top: 10px;
+}
+.form-project form input,
+select,
+textarea,
+button {
+  margin-top: 10px;
+  background-color: #f3f3f3;
+  border: 1px solid #dbdbdb;
+}
+.form-project form textarea {
+  resize: none;
+}
+.form-project form input,
+select {
+  height: 25px;
+  border-radius: 5px;
+}
+.form-project form .name input {
+  height: 35px;
+  width: 100%;
+}
+.form-project form .date {
+  display: flex;
+}
+.form-project form .date label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-project form .date .date-start {
+  width: 50%;
+}
+
+.form-project form .date input {
+  width: 95%;
+  height: 35px;
+}
+.form-project form .date .date-end {
+  width: 50%;
+}
+
+.form-project .input-file input {
+  width: 100%;
+  height: 30px;
+}
+
+.form-project .button-group {
+  width: 100%;
+  text-align: right;
+}
+.form-project .button-group button {
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.form-project .button-group button:hover {
+  color: white;
+  background-color: rgb(13, 122, 185);
+}
+
+.my-project {
+  width: 100%;
+}
+.my-project .card-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* gap: 20px; */
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  justify-items: center;
+}
+.my-project .card-project .row {
+  border-radius: 8px;
+  box-shadow: 0 10px 10px #dbdbdb;
+  padding: 10px;
+  width: 300px;
+  height: 470px;
+  overflow: hidden;
+}
+
+.my-project .card-project .row .project-post {
+  position: absolute;
+  background-color: white;
+  width: 130px;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.my-project .card-project .row img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  margin: 0;
+}
+.my-project .card-project .row h3 {
+  font-size: 20px;
+  margin: 10px;
+  overflow: hidden;
+  --max-line: 1;
+}
+.my-project .card-project .row h3 a {
+  text-decoration: none;
+  --max-line: 1;
+  overflow: hidden;
+  color: black;
+  width: 100%;
+}
+
+.my-project .card-project .row p {
+  width: 280px;
+  margin: 10px;
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 500;
+}
+.my-project .card-project .row .description {
+  width: 280px;
+  height: 65px;
+  --max-line: 3;
+}
+
+.my-project .card-project .row .icon {
+  display: flex;
+  margin: 10px;
+}
+.my-project .card-project .row .icon i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+.my-project .card-project .row .button-group {
+  display: flex;
+  width: 100%;
+}
+.my-project .card-project .row .button-group button {
+  width: 50%;
+  margin: 5px;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  padding: 3px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.my-project .card-project .row .button-group button:hover {
+  background-color: rgb(13, 122, 185);
+  color: white;
+}
+
+@media only screen and (max-width: 1050px) {
+  .my-project .card-project {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .my-project .card-project {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .form-project form {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav-left .item-collapse {
+    display: none;
+  }
+
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+
+  .form-project {
+    height: 112vh;
+  }
+  .form-project form {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .form-project form {
+    width: 350px;
+  }
+  .form-project form .date {
+    flex-direction: column;
+  }
+  .form-project form .date .date-start {
+    width: 100%;
+  }
+  .form-project form .date .date-end {
+    width: 100%;
+  }
+  .form-project form .date input {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form-project form {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .form-project {
+    height: 122vh;
+  }
+  .form-project h1 {
+    font-size: 22px;
+  }
+  .form-project form {
+    width: 200px;
+  }
+  .form-project table .input {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-project .button-group {
+    text-align: center;
+  }
+  .my-project h1 {
+    font-size: 22px;
+  }
+  .my-project .card-project .row {
+    width: 250px;
+  }
+}
